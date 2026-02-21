@@ -1,5 +1,5 @@
 import './Hero.css';
-import LightRays from './Lightrays';
+import LightRays from './LightRays.tsx';
 import { useEffect } from "react";
 
 const Hero = () => {
@@ -15,7 +15,7 @@ const Hero = () => {
     const interval = setInterval(() => {
       el.innerText = finalText
         .split("")
-        .map((char, index) => {
+        .map((_char, index) => {
           if (index < iteration) return finalText[index];
           return letters[Math.floor(Math.random() * letters.length)];
         })
@@ -32,7 +32,7 @@ const Hero = () => {
     <section id="home" className="hero" data-scroll-section>
 
       <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0 }}>
-       import LightRays from './LightRays';
+       
 
 <div style={{ width: '100%', height: '600px', position: 'relative' }}>
   <LightRays
